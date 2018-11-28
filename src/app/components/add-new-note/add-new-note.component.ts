@@ -54,8 +54,4 @@ export class AddNewNoteComponent implements OnInit {
 
   }
 
-  onClickClose(save = false): void {
-    this.dialogRef.close();
-  }
-
 }

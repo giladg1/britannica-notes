@@ -11,7 +11,6 @@ import {AddNewNoteComponent} from '../add-new-note/add-new-note.component';
 })
 export class NotesBoardComponent implements OnInit {
 
-  notesChanges: any;
   notesList: NoteItem[] = [];
 
   constructor(public dialog: MatDialog) {

@@ -3,7 +3,6 @@ import {MatDialog} from '@angular/material';
 import {NoteItem} from '../../shared/models/interfaces';
 import {ModalPopupNotesComponent} from '../modal-popup-notes/modal-popup-notes.component';
 import {AddNewNoteComponent} from '../add-new-note/add-new-note.component';
-import {hasOwnProperty} from 'tslint/lib/utils';
 
 @Component({
   selector: 'app-notes-board',

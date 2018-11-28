@@ -15,14 +15,7 @@
     cursor: pointer;
     overflow: hidden;
     height: 150px;
-
-    .card-body {
-      border: 1px solid black;
-      margin: 20px;
-
-      .card-title, .card-subtitle, .card-text {
-        margin: 10px;
-      }
-    }
+    border: 1px solid black;
+    margin: 20px;
   }
 }

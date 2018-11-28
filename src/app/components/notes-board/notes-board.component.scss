@@ -1,0 +1,15 @@
+.notes-main-title {
+  margin: auto;
+  text-align: center;
+}
+
+.notes-container {
+  padding-top: 50px;
+
+  .card {
+    border: 1px solid black;
+    cursor: pointer;
+    overflow: hidden;
+    height: 150px;
+  }
+}

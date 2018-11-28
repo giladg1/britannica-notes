@@ -1,0 +1,16 @@
+<h1 class="notes-main-title">Welcome to post board</h1>
+<div class="container notes-container">
+  <div class="row">
+    <div class="card col-md-4 col-sm-6 col-12" *ngFor="let note of notesList" (click)="openExistingNote(note)">
+      <div class="card-body">
+        <h5 class="card-title">{{note.author}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{note.date}}</h6>
+        <p class="card-text">{{note.content}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

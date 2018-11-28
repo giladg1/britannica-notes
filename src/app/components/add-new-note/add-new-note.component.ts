@@ -1,8 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MatDialogRef} from '@angular/material';
-import {FormControl, FormGroup, Validators} from '@angular/forms'
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {NoteItem} from '../../shared/models/interfaces';
-import {NotesDataService} from '../../shared/services/notes-data-service/notes-data.service';
 
 @Component({
   selector: 'app-add-new-note',
@@ -26,8 +25,7 @@ export class AddNewNoteComponent implements OnInit {
     return this.newNoteForm.get('content');
   }
 
-  constructor(public dialogRef: MatDialogRef<AddNewNoteComponent>,
-              private notesDataService: NotesDataService) {
+  constructor(public dialogRef: MatDialogRef<AddNewNoteComponent>) {
   }
 
   ngOnInit() {

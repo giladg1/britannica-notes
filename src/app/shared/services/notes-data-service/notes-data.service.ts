@@ -8,6 +8,10 @@ import {NoteItem} from '../../models/interfaces'
 })
 export class NotesDataService {
 
+  /* just in case we would like to get newNote
+  from Observable, but for now we will not use it
+  */
+
   onNewNote = new Subject<NoteItem>();
 
   getOnNewNote (): Observable<NoteItem> {

@@ -1,6 +1,5 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MatDialog} from '@angular/material';
-import {NotesDataService} from '../../shared/services/notes-data-service/notes-data.service';
 import {NoteItem} from '../../shared/models/interfaces';
 import {ModalPopupNotesComponent} from '../modal-popup-notes/modal-popup-notes.component';
 import {AddNewNoteComponent} from '../add-new-note/add-new-note.component';
@@ -10,16 +9,12 @@ import {AddNewNoteComponent} from '../add-new-note/add-new-note.component';
   templateUrl: './notes-board.component.html',
   styleUrls: ['./notes-board.component.scss']
 })
-export class NotesBoardComponent implements OnInit, OnDestroy {
+export class NotesBoardComponent implements OnInit {
 
   notesChanges: any;
   notesList: NoteItem[] = [];
 
-  constructor(public dialog: MatDialog,
-              private notesDataService: NotesDataService) {
-    this.notesChanges = notesDataService.getOnNewNote().subscribe((newNote: NoteItem) => {
-      this.notesList.push(newNote);
-    });
+  constructor(public dialog: MatDialog) {
   }
 
   openExistingNote(noteItem: NoteItem): void {
@@ -47,10 +42,6 @@ export class NotesBoardComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-  }
-
-  ngOnDestroy() {
-    this.notesChanges.unsubscribe();
   }
 
 }

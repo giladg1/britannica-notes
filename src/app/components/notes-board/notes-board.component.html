@@ -1,4 +1,5 @@
 <h1 class="notes-main-title">Welcome to post board</h1>
+<button mat-raised-button color="primary" class="add-new-note-button" (click)="openNewNotePopUp()">Add Note</button>
 <div class="container notes-container">
   <div class="row">
     <div class="card col-md-4 col-sm-6 col-12" *ngFor="let note of notesList" (click)="openExistingNote(note)">

@@ -3,13 +3,26 @@
   text-align: center;
 }
 
+.add-new-note-button {
+  margin-top: 25px;
+  margin-left: 50px;
+}
+
 .notes-container {
   padding-top: 50px;
 
   .card {
-    border: 1px solid black;
     cursor: pointer;
     overflow: hidden;
     height: 150px;
+
+    .card-body {
+      border: 1px solid black;
+      margin: 20px;
+
+      .card-title, .card-subtitle, .card-text {
+        margin: 10px;
+      }
+    }
   }
 }

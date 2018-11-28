@@ -1,3 +1,14 @@
-<p>
-  add-new-note works!
-</p>
+<div class="container">
+  <h2>Post a new note</h2>
+  <hr>
+  <form [formGroup]="newNoteForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="mat-form-field-container">
+      <input matInput placeholder="Author Name" formControlName="author">
+    </mat-form-field>
+    <mat-form-field class="mat-form-field-container">
+      <textarea matInput placeholder="Content" formControlName="content"></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="primary" class="note-close-button" type="submit">Save</button>
+  </form>
+</div>
+

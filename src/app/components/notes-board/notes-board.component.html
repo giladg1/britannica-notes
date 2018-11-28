@@ -2,7 +2,7 @@
 <button mat-raised-button color="primary" class="add-new-note-button" (click)="openNewNotePopUp()">Add Note</button>
 <div class="container notes-container">
   <div class="row">
-    <div class="card col-md-4 col-sm-6 col-12" *ngFor="let note of notesList" (click)="openExistingNote(note)">
+    <div class="card col-md-3 col-sm-5 col-12" *ngFor="let note of notesList" (click)="openExistingNote(note)">
       <div class="card-body">
         <h5 class="card-title">{{note.author}}</h5>
         <h6 class="card-subtitle mb-2 text-muted">{{note.date}}</h6>
